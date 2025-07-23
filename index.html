@@ -12,30 +12,34 @@
     <header class="header">
         <div class="container">
             <div class="nav-wrapper">
-                <div class="logo">R</div>
-                <h1>Retro Buck</h1>
-            </div>
+                    <div class="logo">
+                        <div class="logo-icon">R</div>
+                        <h1>Retro Buck</h1>
+                    </div>
+                
+                <nav class="home">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#recipes" class="nav-link">Recipes</a>
+                    <a href="#menu" class="nav-link">Menu</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
 
-            <nav class="home">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#recipes" class="nav-link">Recipes</a>
-                <a href="#menu" class="nav-link">Menu</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </nav>
-
-            <div class="nav-actions">
-                <button class="search-btn" id="searchBtn" title="Search">
-                    <svg width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="11" cy="11" r="8"></circle>
-                        <path d="m21 21-4.35-4.35"></path>
-                    </svg>
-                    <span class="visually-hidden">Search</span>
-                </button>
-                <button class="menu-btn" id="menuBtn" title="Open menu">
-                    <span class="visually-hidden">Open menu</span>
-                    <span></span>
-                </button>
+                <div class="nav-actions">
+                    <button class="search-btn" id="searchBtn" title="Search">
+                        <svg width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                        <span class="visually-hidden">Search</span>
+                    </button>
+                    <button class="menu-btn" id="menuBtn" title="Open menu">
+                        <span class="visually-hidden">Open menu</span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>    
+                </div>
             </div>
         </div>
     </header>
@@ -45,7 +49,8 @@
         <div class="hero-bg"></div>
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1 class="hero-title">Culinary Excellence
+            <h1 class="hero-title">
+                Culinary Excellence
                 <span class="hero-subtitle">Meets Tradition</span>
             </h1>
             <p class="hero-description">
@@ -90,7 +95,8 @@
 
             <div class="menu-categories">
                 <button class="category-btn active" data-category="appetizers">Appetizers</button>
-                <button class="category-btn active" data-category="mains">Main Courses</button><button class="category-btn active" data-category="desserts">Desserts</button>
+                <button class="category-btn active" data-category="mains">Main Courses</button>
+                <button class="category-btn active" data-category="desserts">Desserts</button>
             </div>
 
             <div class="menu-grid" id="menuGrid">
@@ -106,10 +112,14 @@
                 <div class="about-text">
                     <h2 class="section-title">Our Story</h2>
                     <p class="about-paragraph">
-                        Retro Buck was born from a passion for authentic Italian cuisine and a desire to share the rich culinary traditions of our homeland in Kanya. Founded in 1985 by the Rossi family, our restaurant has been serving the community with love, tradition and exceptional food. 
+                        Retro Buck was born from a passion for authentic Italian cuisine and a desire to share 
+                        the rich culinary traditions of our homeland in Kanya. Founded in 1985 by the Rossi family,
+                         our restaurant has been serving the community with love, tradition and exceptional food. 
                     </p>
-                    <p>
-                        Every dish tells a story, crafted from recipes passed down through generations and prepared with the finest ingredients. Our chefs are dedicated to preserving the authenticity of Italian cooking while adding their own unique touch. At Retro Buck, we believe that food is not just about sustenance, but about bringing people together and creating memories that last a life time.
+                    <p class="about-paragraph">
+                        Every dish tells a story, crafted from recipes passed down through generations
+                         and prepared with the finest ingredients. Our chefs are dedicated to preserving the authenticity of Italian cooking while adding their own unique touch. At Retro Buck, we believe
+                         that food is not just about sustenance, but about bringing people together and creating memories that last a life time.
                     </p>
 
                     <div class="stat-grid">
@@ -121,7 +131,7 @@
                                 </svg>
                             </div>
                             <h3 class="stat-number">40+</h3>
-                            <p >Awards</p>
+                            <p class="stat-label">Awards</p>
                         </div>
                         <div class="stat-item">
                             <div class="stat-icon">
@@ -146,6 +156,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="about-image">
                     <img src="https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Restaurant Interior">
                     <div class="established-badge">
@@ -168,34 +179,84 @@
             </div>
 
             <div class="contact-content">
-                <div class="contact-info">
-                    <h3 class="contact-title">Get in Touch</h3>
+                    <div class="contact-info">
+                        <h3 class="contact-title">Get in Touch</h3>
 
-                    <div class="contact-items">
-                        <div class="contact-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                                     <circle cx="12" cy="10" r="3"></circle>
-                            </svg>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Address</h4>
+                                <p>123 Via Roma, Little Italy<br>New York, NY 10012</p>
+                            </div>
                         </div>
-                        <div class="contact-details">
-                            <h4>Address</h4>
-                            <p>123 Via Roma, Little Italy<br>New York, NY 10012</p>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>(555) 123-4567</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>info@retrobuck.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12,6 12,12 16,14"></polyline>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Hours</h4>
+                                <div>
+                                    <p>Monday - Thursday: 5:00 PM - 10:00 PM</p>
+                                    <p>Friday - Saturday: 5:00 PM - 11:00 PM</p>
+                                    <p>Sunday: 4:00 PM - 9:00 PM</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                            </svg>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Phone</h4>
-                            <p>(555) 123-4567</p>
-                        </div>
+                    <button class="btn btn-primary reservation-btn">Make a Reservation</button>
+                </div>
+
+                <div class="map-placeholder">
+                    <div class="map-content">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <p>Interactive Map</p>
+                        <span>123 Via Roma, Little Italy, NY</span>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+     <script src="script.js"></script>
 </body>
 </html>
