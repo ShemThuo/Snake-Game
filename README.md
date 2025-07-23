@@ -30,10 +30,9 @@ Retro Buck is an authentic Italian restaurant web project. The site showcases fe
 The project is organized into the following sections:
 
 - `index.html`: The main HTML file for the landing page.
-- `styles.css`: Contains information about the styling of the website.
+- `styles.css`: Contains the project's CSS files for styling.
 - `assets/`: A directory for images, fonts, and other media.
-- `css/`: Contains the project's CSS files for styling.
-- `js/`: Contains JavaScript files for interactivity.
+- `script.js/`: Contains JavaScript files for interactivity.
 
 ## How to Run
 
