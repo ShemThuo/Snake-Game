@@ -466,3 +466,155 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* About Section */
+.about-section {
+    padding: 6rem 0;
+    background: #f8f9fa;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about-text .section-title {
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.about-paragraph {
+    font-size: 1.125rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+
+.stat-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-icon {
+    width: 60px;
+    height: 60px;
+    background: #FF6B35;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    color: white;
+}
+
+.stat-number {
+    font-size: 2rem;
+    color: #2c1810;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    color: #666;
+    font-weight: 500;
+}
+
+.about-image {
+    position: relative;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.established-badge {
+    position: absolute;
+    bottom: -2rem;
+    left: -2rem;
+    width: 120px;
+    height: 120px;
+    background: #FF6B35;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 10px 30px rgba(255, 107, 53, 0.3);
+}
+
+.badge-text {
+    font-size: 1rem;
+}
+
+.badge-year {
+    font-size: 1.5rem;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 6rem 0;
+    background: white;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.contact-title {
+    font-size: 2rem;
+    color: #2c1810;
+    margin-bottom: 2rem;
+}
+
+.contact-items {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-item {
+    display: flex;
+    gap: 1rem;
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    background: #FF6B35;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-shrink: 0;
+}
+
+.contact-details h4 {
+    font-weight: 600;
+    color: #2c1810;
+    margin-bottom: 0.5rem;
+}
+
+.contact-details p {
+    color: #666;
+    line-height: 1.5;
+}
+
+.reservation-btn {
+    margin-top: 2rem;
+}
+
+.map-placeholder {
+    background: #e9ecef;
+}
