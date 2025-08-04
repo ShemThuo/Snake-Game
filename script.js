@@ -29,5 +29,32 @@ const recipes = [
     {
         id: 2,
         title: "Classic Margherita Pizza",
+        image: "https://images.pixels.com/photos/2147491/pexels-photo-2147491.jpeg?auto=compress&cs=tinysrgb&w=800",
+        cookTime: "45 mins",
+        servings: 2,
+        difficulty: "Easy",
+        description: "Classic Neapolitan pizza with tomato sauce, fresh mozzarella, and basil. Named after Queen Margherita, this pizza represents the colors of the italian flag.",
+        ingredients: [
+            "1 ball of pizza dough (homemade or store-bought)",
+            "400g crushed San Marzano tomatoes",
+            "250g fresh mozzarella di bufala, torn",
+            "Fresh basil leaves",
+            "Extra virgin olive oil",
+            "Sea salt and freshly ground pepper",
+            "2 garlic cloves, minced"
+        ],
+        instructions: [
+            "Preheat your oven to its highest setiing (usually 500°F/260°C) with a pizza stone if available.",
+            "Roll out pizza dough on a floured surface to your desired thickness.",
+            "Mix crushed tomatoes with minced garlic, salt, and pepper for the sauce.",
+            "Spread tomato sauce evenly over the dough, leaving a 1-inch border for the crust.",
+            "Add torn mozzarella pieces evenly across the pizza and drizzle with olive oil.",
+            "Bake for 10-12 minutes until the crust is golden and the cheese is bubbly with brown spots.",
+            "Remove from oven and immediately top with fresh basil leaves before serving."
+        ]
+    },
+    {
+        id: 3,
+        title: "Classic Tiramisu",
     }
 ]
