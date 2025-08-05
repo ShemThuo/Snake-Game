@@ -56,5 +56,34 @@ const recipes = [
     {
         id: 3,
         title: "Classic Tiramisu",
+        image: "https://images.pexels.com/photos/6368370/pexels-photo-6368370.jpeg?auto=compress&cs=tinysrgb&w=800",
+        cookTime: "30 mins",
+        servings: 8,
+        difficulty: "Medium",
+        description: "The iconic Italian dessert with coffee-soaked ladyfingers layered with a rich mascarpone cream. Tiramisu means 'pick me up' in Italian, and this dessert certainly lives up to its name.",
+        ingredients: [
+            "6 large egg yolks",
+            "3/4 cup granulated sugar",
+            "500g mascarpone cheese, room temperature",
+            "1.5 cups strong espresso, cooled",
+            "3 tablespoons coffee liqueur (optional)",
+            "30 ladyfingers (savoiardi)",
+            "Unsweetened cocoa powder for dusting",
+            "Dark chocolate shavings for garnish", 
+        ],
+        instructions: [
+            "Whisk egg yolks and sugar in a double boiler over simmering water until thick, pale, and ribbonny.",
+            "Remove from heat and whisk in mascarpone until completely smooth. Let cool to room temperature.",
+            "Combine cooled espresso and coffee liquer in a shallow dish.",
+            "Quickly dip each ladyfinger in the coffee mixture and arrange in a single layer in your dish.",
+            "Spread half of the mascarpone mixture over the ladyfingers, smoothing it out evenly.",
+            "Repeat with another layer of dipped ladyfingers and the remaining mascarpone mixture.",
+            "Cover and refrigerate for at least 4 hours or overnight for best results.",
+            "Before serving, dust generously with cocoa powder and garnish with dark chocolate shavings.",
+        ]
+    },
+    {
+        id: 4,
+        title: "Risotto alla Milanese",
     }
 ]
