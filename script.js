@@ -85,5 +85,35 @@ const recipes = [
     {
         id: 4,
         title: "Risotto alla Milanese",
+        image: "https://images.pexels.com/photos/8601236/pexels-photo-8601236.jpeg?auto=compress&cs=tinysrgb&w=800",
+        cookTime: "35 mins",
+        servings: 4,
+        difficulty: "Hard",
+        description: "Creamy saffron risotto form Milan, golden in color and rich in flavor. This luxurious dish requires patience and technique but rewards with incredible taste.",
+        ingredients: [
+            "320g Arborio rice",
+            "1.5L warm chicken or vegetable stock",
+            "1/2 cup dry while wine",
+            "1 large onion, finely chopped",
+            "3 tablespons butter",
+            "2 tablespoons olive oil",
+            "Pinch of saffron threads",
+            "100g Parmigiano-Reggiano, grated",
+            "Salt and white pepper to taste",
+        ],
+        instructions: [
+            "Heat the stock in a saucepan and keep it warm. Steep saffron in 2 tablespoons of hot stock.",
+            "Heat olive oil and 1 tablespoon butter in a heavy-bottomed pan over medium heat.",
+            "Add chopped onion and cook until translucent, about 5 minutes.",
+            "Add rice and stir for 2 minutes until grains are well-coated and slightly translucent.",
+            "Pour in wine and stir until absorbed completely.",
+            "Add warm shock one lable at a time, stirring constantly until absorbed before adding more.",
+            "After about 15 minutes, add the safron mixture and continue adding stock until rice is creamy but al dente.",
+            "Remove from heat, stir in remaining butter and Parmigiano-Reggiano. Season and serve immediately.",
+        ]
+    },
+    {
+        id: 5,
+        title: "Osso Buco",
     }
 ]
