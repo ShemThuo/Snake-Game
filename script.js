@@ -115,5 +115,67 @@ const recipes = [
     {
         id: 5,
         title: "Osso Buco",
+        image: "https://images.pexels.com/photos/5699456/pexels-photo-5699456.jpeg?auto=compress&cs=tinysrgb&w=800",
+        cookTime: "2.5 hours",
+        servings: 6,
+        difficulty: "Hard",
+        description :"Slow-braised veal shanks in a rich tomato and wine sauce. This Milanese speciality is comfort food at its finest, perfect for special occasions.",
+        ingredients: [
+            "6 veal shanks, about 2 inches thick",
+            "1/2 cup all-purpose flour",
+            "4 tablespoons olive oil",
+            "1 large onion, diced",
+            "2 carrots, diced",
+            "2 celery stalks, diced",
+            "4 garlic cloves, minced",
+            "1 cup dry white wine",
+            "1 can (400g) diced tomatoes",
+            "2 cups beef or veal stock",
+            "2 bay leaves",
+            "Fresh thyme and rosemary sprigs",
+            "Gremolata (chopped parsley, lemon zest, and garlic) for garnish",
+        ],
+        instructions: [
+            "Preheat oven to 350°F (165°C). Season veal shanks and dredge in flour, shaking off excess.",
+            "Heat olive oil in a large Dutch oven and brown veal shanks on all sides. Remove and set aside.",
+            "In the same pot, sauté onion, carrots, celery, and garlic until softened for about 8 minutes.",
+            "Add garlic and cook for another minute until fragrant.",
+            "Pour in wine to deglaze, scrapiing up any browned bits from the bottom.",
+            "Add tomatoes, stock, herbs, and return veal to the pot.",
+            "Cover and braise in the oven for 2-2.5 hours until meat is fork-tender.",
+            "Prepare gremolata by mixing lemon zest, minced garlic, and chopped parsely.",
+            "Serve osso buco with gremolata and traditional risotto alla milanese.",
+        ]
+    },
+    {
+        id: 6,
+        title: "Panna Cotta",
+        image: "https://images.pexels.com/photos/4099123/pexels-photo-4099123.jpeg?auto=compress&cs=tinysrgb&w=800",
+        cookTime: "25 mins",
+        servings: 6,
+        difficulty: "Easy",
+        description: "Silky smooth vanilla custard dessert that melts in your mouth. This elegant dessert is surprisingly simple to make and always impresses guests.",
+        ingredients: [
+            "2 cups heavy cream",
+            "1/2 cup granulated sugar",
+            "1 packet (2.25 tsp) unflavored gelatin",
+            "3 tablespoon water",
+            "1 vanilla bean or 1 teaspoon vanilla extract", 
+            "Pinch of salt",
+            "Fresh berries or berry sauce for serving",
+            "Berry coulis or caramel sauce for drizzling",
+        ],
+        instructions: [
+            "Sprinkle gelatin over cold water in a small bowl and let bloom for 5 minutes.",
+            "Split vanilla bean and scrape seeds into cream, or add vanilla extract.",
+            "Heat cream, sugar, vanilla, and salt in a saucepan until sugar dissolves and mixture is hot but not boiling.",
+            "Remove from heat and whisk in the bloomed gelatin until completely dissolved.",
+            "Strain mixture through a fine sieve into a measuring jug to remove any lumps.",
+            "Dvide among 6 ramekins or glasses and refrigirate for at least 4 hours or until set.",
+            "Serve chilled with fresh berries and a drizzle of berry coulis or caramel sauce.",
+            "To unmold, briefly dip ramekins in warm water and invert onto plates.",
+        ]
     }
-]
+];
+
+// Menu data
