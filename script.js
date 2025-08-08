@@ -179,3 +179,18 @@ const recipes = [
 ];
 
 // Menu data
+const menuItems = [
+    {
+        id: 1,
+        name: "Bruschetta Italiana",
+        description: "Grilled artisan bread topped with fresh tomatoes, basil, garlic, and extra virgin olive oil",
+        price: "$12",
+        image: "https://images.pexels.com/photos/5755889/pexels-photo-5755889.jpeg?auto=compress&cs=tinysrgb&w=600",
+        category: "appetizers"
+    },
+    {
+        id: 2,
+        name: "Antipasto Della Casa",
+        description: "Chef's selection of cured meats, artisanal cheeses, olives, and marinated vegetables",
+    }
+]
