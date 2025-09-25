@@ -24,3 +24,9 @@ canvas {
     display: block;
     margin: 0 auto;
 }
+
+div.relative {
+    position: absolute;
+    top: 760px;
+    left: 120px;
+}   
