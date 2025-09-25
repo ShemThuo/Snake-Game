@@ -27,4 +27,9 @@ function initialize() {
     gameStart.onclick = function() {
         this.disabled = true;
     }
+    function startGame() {
+        playerScore = 0;
+        snakeDirection = "right";
+        speedSize = parseInt(gameSpeed.value);
+    }
 }
