@@ -1,29 +1,39 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Snake Game</title>
-        <meta name="description" content="Play the classic Snake Game online. Control the snake, eat food, and try to achieve the highest score!">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="app.css">
-    </head>
-    <body>
-        Speed:
-        <input type="number" id="gameSpeed" value="5" min="1" max="9" step="1"/>
-        <input type="button" value="Start" id="gameStart"/>
-
-        <br/>
-        <br/>
-
-        <div>
-            <canvas id="gameArea" ></canvas>
-        </div>
-
-        <div class="relative">
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game - Classic Retro Browser Game</title>
+    <meta name="description" content="Play the classic Snake game in your browser. Control the snake with arrow keys, eat food, and grow longer!">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Snake Game</h1>
+        <p class="subtitle">Use arrow keys to control the snake</p>
+        
+        <div class="score">Score: <span id="scoreValue">0</span></div>
+        
+        <div id="gameBoard" class="game-board"></div>
+        
+        <div class="controls">
+            <button id="startBtn" class="start-btn">Start Game</button>
+            <button id="pauseBtn" class="pause-btn" style="display: none;">Pause</button>
         </div>
         
-        <script src="app.js"></script>
-    </body>
+        <div id="gameOverMsg" class="game-over" style="display: none;">
+            Game Over!
+        </div>
+        
+        <div class="instructions">
+            <strong>How to Play:</strong><br>
+            • Use arrow keys (↑ ↓ ← →) to control the snake<br>
+            • Eat the red food to grow and increase your score<br>
+            • Avoid hitting walls or your own body<br>
+            • Press Start Game to begin!
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
 </html>
