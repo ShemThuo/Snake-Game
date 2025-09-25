@@ -52,21 +52,84 @@ function createFood() {
 }
 
 function createGameArea() {
+    var snakeX = snake[0].x;
+    var snakeY = snake[0].y;
 
+    gameAreaContext.fillStyle = "#FFFFFF";
+    gameAreaContext.fillRect(0, 0, gameAreaWidth, gameAreaHeight);
+    gameAreaContext.strokeStyle = "#CCCCCC";
+    gameAreaContext.strokeRect(0, 0, gameAreaWidth, gameAreaHeight);
+
+    if (snakeDirection == "right") {
+        snakeX++;
+    }else if (snakeDirection == "left") {
+        snakeX--;
+    }else if (snakeDirection == "up") {
+        snakeY--;
+    }else if (snakeDirection == "down") {
+        snakeY++;
+    }
+    if(
+        snakeX == -1 ||
+        snakeX == gameAreaWidth / cellWidth ||
+        snakeY == -1 ||
+        snakeY == gameAreaHeight / cellWidth ||
+        Control(snakeX, snakeY, snake)
+    ){
+        writeScore();
+        clearInterval(timer);
+        gameStart.disabled = false;
+        return;
+    }
+    if (snakeX == snakeFood.x && snakeY == snakeFood.y) {
+        var newHead = {x: snakeX, y: snakeY};
+        playerScore += speedSize;
+        createFood();
+    }else {
+        var newHead = snake.pop();
+        newHead.x = snakeX;
+        newHead.y = snakeY;
+    }
+    snake.unshift(newHead);
+    for (var i = 0; i < snake.length; i++) {
+        createSquare(snake[i].x, snake[i].y, "#000000");
+    }
+    createSquare(snakeFood.x, snakeFood.y, "#FF0000");
 }
 
-function Control() {
-
+function Control(x, y, array) {
+    for (var i = 0; i < array.length; i++) {
+        if (array[i].x == x && array[i].y == y) {
+            return true;
+        }
+    }
+    return false;
 }
 
 function writeScore() {
-
+    gameAreaContext.font = "50px Sans-serif";
+    gameAreaContext.fillStyle = "#FFF333";
+    gameAreaContext.fillText(
+        "Score: " + playerScore,
+        gameAreaWidth / 2-100,
+        gameAreaHeight / 2
+    );
 }
 
-function createSquare() {
-
+function createSquare(x, y) {
+    gameAreaContext.fillStyle = "#000000";
+    gameAreaContext.fillRect(x * cellWidth, y * cellWidth, cellWidth, cellWidth);
 }
 
-function changeDirection() {
-    
+function changeDirection(e) {
+    var keys = e.which;
+    if (keys == "40" && snakeDirection != "up") {
+        snakeDirection = "down";
+    } else if (keys == "39" && snakeDirection != "left") {
+        snakeDirection = "right";
+    } else if (keys == "38" && snakeDirection != "down") {
+        snakeDirection = "up";
+    }else if (keys == "37" && snakeDirection != "right") {
+        snakeDirection = "left";
+    }
 }
