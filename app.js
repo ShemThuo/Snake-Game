@@ -1,25 +1,24 @@
-var gameStart = null;
-var gameSpeed = null;
-var gameArea = null;
-var gameAreaContext = null;
-var gameWidth = 0;
-var gameHeight = 0;
-var cellWidth = 0;
-var playScore = 0;
-
-snake = null;
-snakeFood = null;
-snakeDirecction = null;
-speedSize = 0;
-time = null;
+let gameStart = null;
+let gameSpeed = null;
+let gameArea = null;
+let gameAreaContext = null;
+let gameAreaWidth = 0;
+let gameAreaHeight = 0;
+let cellWidth = 0;
+let playerScore = 0;
+let snake = null;
+let snakeFood = null;
+let snakeDirection = null;
+let speedSize = 0;
+let timer = null;
 
 function initialize() {
     gameStart = document.getElementById("gameStart");
     gameSpeed = document.getElementById("gameSpeed");
     gameArea = document.getElementById("gameArea");
     gameAreaContext = gameArea.getContext("2d");
-    gameAreaWidth = 400;
-    gameAreaHeight = 400;
+    gameAreaWidth = 500;
+    gameAreaHeight = 500;
     cellWidth = 20;
     gameArea.width = gameAreaWidth;
     gameArea.height = gameAreaHeight;
@@ -45,6 +44,7 @@ function initialize() {
 createFood();
 clearInterval(timer);
 timer = setInterval(createGameArea, 500 / speedSize);
+
 function createFood() {
     snakeFood = {
         x: Math.round((Math.random() * (gameAreaWidth - cellWidth)) / cellWidth),
