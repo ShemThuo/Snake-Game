@@ -26,10 +26,47 @@ function initialize() {
 
     gameStart.onclick = function() {
         this.disabled = true;
-    }
+    };
+}
     function startGame() {
         playerScore = 0;
         snakeDirection = "right";
         speedSize = parseInt(gameSpeed.value);
+
+        if (speedSize > 9) {
+            speedSize = 9;
+        }else if (speedSize < 0) {
+            speedSize = 1;
+       }
+        snake = []
+        snake.push({x: 0, y: cellWidth});
     }
+createFood();
+clearInterval(timer);
+//timer = setInterval(create);
+function createFood() {
+    snakeFood = {
+        x: Math.round((Math.random() * (gameAreaWidth - cellWidth)) / cellWidth),
+        y: Math.round((Math.random() * (gameAreaHeight - cellWidth)) / cellWidth),
+    }
+}
+
+function createGameArea() {
+
+}
+
+function Control() {
+
+}
+
+function writeScore() {
+
+}
+
+function createSquare() {
+
+}
+
+function changeDirection() {
+    
 }
