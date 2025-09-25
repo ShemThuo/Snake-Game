@@ -26,6 +26,7 @@ function initialize() {
 
     gameStart.onclick = function() {
         this.disabled = true;
+        startGame();
     };
 }
     function startGame() {
@@ -43,7 +44,7 @@ function initialize() {
     }
 createFood();
 clearInterval(timer);
-//timer = setInterval(create);
+timer = setInterval(createGameArea, 500 / speedSize);
 function createFood() {
     snakeFood = {
         x: Math.round((Math.random() * (gameAreaWidth - cellWidth)) / cellWidth),
@@ -133,3 +134,7 @@ function changeDirection(e) {
         snakeDirection = "left";
     }
 }
+
+window.onload = initialize;
+window.onkeydown = changeDirection;
+// --- IGNORE ---
