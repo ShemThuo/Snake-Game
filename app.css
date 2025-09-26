@@ -81,7 +81,7 @@
             background: linear-gradient(45deg, #ef4444, #dc2626) !important;
             border: 1px solid #ef4444 !important;
             box-shadow: 0 0 15px rgba(239, 68, 68, 0.8);
-            animation: pulse 1s ease-in-out infinite;
+            animation: pulse 1s ease-in-out infinite ;
             border-radius: 50% !important;
         }
 
@@ -151,6 +151,13 @@
             background: rgba(15, 23, 42, 0.5);
             border-radius: 10px;
             border: 1px solid rgba(51, 65, 85, 0.3);
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 0.8rem;
+            color: #64748b;
+            animation: pulse 2s ease-in-out infinite alternate;
         }
 
         @media (max-width: 600px) {
